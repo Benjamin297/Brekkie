@@ -90,6 +90,7 @@ export const DrinksList = styled.div`
   .Card_holder {
     width: 23.9%;
     height: 453px;
+    min-height: max-content;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
     gap: 0.8rem;
     flex-direction: column;
@@ -98,6 +99,7 @@ export const DrinksList = styled.div`
     background-color: white;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    padding-bottom: 10px;
   }
 
   .Product_holder {

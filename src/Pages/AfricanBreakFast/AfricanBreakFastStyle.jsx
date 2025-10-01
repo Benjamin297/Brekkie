@@ -90,6 +90,7 @@ export const AfricanList = styled.div`
   .Card_holder {
     width: 23.9%;
     height: 453px;
+    min-height: max-content;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
     gap: 0.8rem;
     flex-direction: column;
@@ -98,6 +99,7 @@ export const AfricanList = styled.div`
     background-color: white;
     margin-bottom: 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 10px;
   }
 
   .Product_holder {

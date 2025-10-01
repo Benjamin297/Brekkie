@@ -8,7 +8,7 @@ import {
 import African from "../../assets/African.jpg";
 import { BiCartAdd } from "react-icons/bi";
 import { GiScooter } from "react-icons/gi";
-// import { DisplayFruit } from "../Card";
+import { DisplayDrinks } from "../Drinks/Card";
 
 const AfricanBreakFast = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -41,7 +41,7 @@ const AfricanBreakFast = () => {
       </Menu>
 
       <AfricanList>
-        {DisplayFruit.map((item) => (
+        {DisplayDrinks.map((item) => (
           <div className="Card_holder" key={item.id}>
             <div className="Product_holder">
               <div className="icon">

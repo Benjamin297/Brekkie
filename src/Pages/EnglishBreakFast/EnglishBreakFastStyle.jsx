@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const EnglishContainer = styled.div`
   width: 100%;
   display: flex;
-  height: auto;
+  height: max-content;
   margin-bottom: 3rem;
   align-items: center;
   flex-direction: column;
@@ -90,6 +90,7 @@ export const EnglishList = styled.div`
   .Card_holder {
     width: 23.9%;
     height: 453px;
+    min-height: max-content;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
     gap: 0.8rem;
     flex-direction: column;
@@ -98,6 +99,7 @@ export const EnglishList = styled.div`
     background-color: white;
     margin-bottom: 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 10px;
   }
 
   .Product_holder {

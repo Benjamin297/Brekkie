@@ -34,7 +34,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 90%;
+  width: 80%;
   height: 80vh;
   display: flex;
   justify-content: space-between;
@@ -48,7 +48,7 @@ const TextHolder = styled.div`
   }
 
   h1 {
-    width: 50%;
+    width: 60%;
     line-height: 150%;
     font-size: 48px;
   }
