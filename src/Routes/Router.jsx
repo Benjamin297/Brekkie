@@ -7,7 +7,9 @@ import Signup from "../Auth/Signup";
 import AfricanBeeakFast from "../Pages/AfricanBreakFast/AfricanBreakFast";
 import CuratedCombo from "../Pages/CuratedCombo/CuratedCombo";
 import Drinks from "../Pages/Drinks/Drinks";
-import HeathyBreakFast from "../Pages/HealthyBreakFast/HeathyBreakFast";
+import FruitsAndVeggis from "../Pages/FruitsAndVeggisBreakFast/FruitsAndVeggis";
+import Pastries from "../Pages/Pastries/Pastries";
+import Landing from "../Pages/Landing/Landing";
 
 export const Element = createBrowserRouter([
   {
@@ -35,18 +37,27 @@ export const Element = createBrowserRouter([
         element: <Drinks />,
       },
       {
-        path: "Heathy",
-        element: <HeathyBreakFast />,
+        path: "FruitsAndVeggies",
+        element: <FruitsAndVeggis />,
+      },
+
+      {
+        path: "Pastries",
+        element: <Pastries />,
       },
     ],
   },
 
   {
     path: "/",
-    element: <Signin />,
+    element: <Landing />,
   },
-  {
-    path: "/signup",
-    element: <Signup />,
-  },
+  // {
+  //   path: "/",
+  //   element: <Signin />,
+  // },
+  // {
+  //   path: "/signup",
+  //   element: <Signup />,
+  // },
 ]);
