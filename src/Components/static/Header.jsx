@@ -8,7 +8,7 @@ import {
 import { GoSearch } from "react-icons/go";
 import { BsCart3 } from "react-icons/bs";
 import { HiOutlineUser } from "react-icons/hi";
-import logo from "../../assets/Logo.png";
+import logo from "../../assets/LPLogo.svg";
 
 const Header = () => {
   return (
