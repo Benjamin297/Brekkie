@@ -91,7 +91,7 @@ export const RighttHolder = styled.div`
     width: 35%;
     height: 7vh;
     border-radius: 5rem;
-    background-color: #6b7153;
+    background-color: #6b8e23;
     cursor: pointer;
   }
 `;
