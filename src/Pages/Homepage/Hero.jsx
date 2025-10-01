@@ -13,9 +13,7 @@ const Hero = () => {
             Brekkie ensures you never skip the most important meals! fast, fresh
             and reliable delivery for busy mornings.
           </p>
-          <div style={{ display: "flex", gap: "1rem" }}>
-            {/* <button>Order now</button> */}
-          </div>
+          <div style={{ display: "flex", gap: "1rem" }}></div>
         </Wrapper>
       </Container>
     </div>
@@ -42,7 +40,6 @@ const Wrapper = styled.div`
     font-weight: 600;
     color: #ffffff;
     width: 40%;
-    /* text-align: center; */
   }
   p {
     font-size: 16px;
@@ -50,25 +47,7 @@ const Wrapper = styled.div`
     color: #ffffff;
     width: 33%;
     line-height: 30px;
-    /* text-align: center; */
   }
-
-  /* button {
-    padding: 1rem 3rem;
-    border: none;
-    border-radius: 0.3rem;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    transition: all 350ms;
-
-    &:hover {
-      background-color: white;
-      color: black;
-    }
-  } */
 `;
 
 const Container = styled.div`
