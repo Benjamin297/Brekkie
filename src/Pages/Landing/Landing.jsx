@@ -1,11 +1,14 @@
-import React from "react";
+// import React , {useState}from "react";
 import LPLogo from "../../assets/LPLogo.svg";
 import styled from "styled-components";
 import Hero from "../Landing/Hero";
 import Hero2 from "./Hero2";
 import Faq from "./Faq";
+import { Footer } from "../../Components";
 
 const Landing = () => {
+  const titles = ["Home", "About", "Contacts Us"];
+
   return (
     <>
       <HeaderContainer>
@@ -14,14 +17,12 @@ const Landing = () => {
             <img src={LPLogo} alt="Landing Page Logo" />
           </div>
           <div className="Menu">
-            <ul>
-              <li style={{ color: "#6b8e23" }}>Home</li>
-              <li>About</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-          <div className="Question">
-            <button>FAQs</button>
+            {titles.map((itm, index) => (
+              <h4 key={index}>{itm}</h4>
+            ))}
+            <div className="Question">
+              <button>FAQS</button>
+            </div>
           </div>
         </HeaderHolder>
       </HeaderContainer>
@@ -29,13 +30,13 @@ const Landing = () => {
       <Hero />
       <Hero2 />
       <Faq />
+      <Footer />
     </>
   );
 };
 
 export default Landing;
 
-// Styled Components
 const HeaderContainer = styled.div`
   width: 100%;
   height: 80px;
@@ -51,10 +52,11 @@ const HeaderHolder = styled.div`
   display: flex;
 
   .Logo {
-    width: 71%;
+    width: 80%;
     height: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     img {
       width: 15%;
@@ -63,28 +65,33 @@ const HeaderHolder = styled.div`
   }
 
   .Menu {
-    width: 21%;
+    width: 50%;
     height: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 
     ul {
       list-style: none;
       display: flex;
       gap: 2rem;
-      cursor: pointer;
     }
 
-    li {
+    h4 {
       font-weight: 400;
       letter-spacing: 4%;
       line-height: 150%;
       font-size: 1rem;
+      cursor: pointer;
+    }
+    & h4:hover {
+      color: #6b8e23;
     }
   }
 
   .Question {
-    width: 8%;
+    width: 30%;
     height: auto;
     display: flex;
     align-items: center;

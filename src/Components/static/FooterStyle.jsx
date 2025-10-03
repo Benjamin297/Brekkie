@@ -142,6 +142,23 @@ export const FooterIcon = styled.div`
     cursor: pointer;
   }
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 93%;
+    height: auto;
+
+    small {
+      margin-right: 40rem;
+      width: 50%;
+    }
+
+    .icons {
+      margin-right: 36rem;
+      width: 50%;
+    }
+  }
+
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     gap: 0.8rem;

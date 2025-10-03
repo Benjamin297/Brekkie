@@ -6,21 +6,33 @@ const Faq = () => {
   const questions = [
     {
       text: "Can I schedule my breakfast ahead of time?",
+      title:
+        "Yes! You can pre-order your breakfast for the next morning and choose your preferred delivery time.",
     },
     {
       text: "What areas do you deliver to?",
+      title:
+        "We currently deliver to select locations within [insert city/region]. You can check availability by entering your address on the homepage.",
     },
     {
       text: "What time can I place an order?",
+      title:
+        "Orders can be placed from 6:00 AM to 11:00 AM for same-day delivery. Pre-orders for the next day are also available.",
     },
     {
       text: "How long does delivery take?",
+      title:
+        "On average, delivery takes 20–40 minutes, depending on your location and order size.",
     },
     {
       text: "Are there healthy breakfast options?",
+      title:
+        "Yes, we offer a variety of healthy options including oats, fruit bowls, smoothies, and low-calorie meals.",
     },
     {
       text: "What payment methods do you accept?",
+      title:
+        "We accept debit/credit cards, mobile transfers, and cash on delivery.",
     },
   ];
 
@@ -42,7 +54,7 @@ const Faq = () => {
               <QuestionText>{item.text}</QuestionText>
               <IoIosArrowDown style={{ color: "white", fontSize: "25px" }} />
             </QuestionCard>
-            {dropDown === index ? <AnswerCard></AnswerCard> : null}
+            {dropDown === index ? <AnswerCard>{item.title}</AnswerCard> : null}
           </QuestionsCard>
         ))}
       </CardWrapper>
@@ -70,10 +82,8 @@ const CardWrapper = styled.div`
   height: 70%;
   min-height: max-content;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  /* background-color: red; */
   gap: 5px;
 `;
 const FaqText = styled.h2`
@@ -108,7 +118,7 @@ const AnswerCard = styled.div`
   width: 100%;
   height: 68px;
   min-height: max-content;
-  background-color: #3f238e;
+  background-color: #eee;
   padding-inline: 25px;
   display: flex;
   justify-content: space-between;

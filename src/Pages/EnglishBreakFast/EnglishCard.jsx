@@ -9,7 +9,7 @@ export const DisplayEnglishCard = [
   },
   {
     id: 2,
-    image: "https://i.postimg.cc/HntNKGkD/Cupuciano.jpg",
+    image: "https://i.postimg.cc/C5sv2HDf/Eng2.jpg",
     name: "Poached eggs",
     price: "₦ 11,000",
     description: "Avocado sunny-sideup eggs, bacon and toast",
@@ -48,7 +48,7 @@ export const DisplayEnglishCard = [
     image: "https://i.postimg.cc/s27C0QF1/Sausage-ball.jpg",
     name: "Sausage Ball",
     price: "₦ 12,000",
-    description: "Oats with almond, fruits and nuts nutritious",
+    description: "Oats with almond, fruits and nuts",
     deliveryTime: "from 10 - 20 min",
   },
 
@@ -57,7 +57,7 @@ export const DisplayEnglishCard = [
     image: "https://i.postimg.cc/yd2Qqn0y/Hash-brown.jpg",
     name: "Hash Brown",
     price: "₦ 12,000",
-    description: "Oats with almond milk, fruits and nuts nutritious",
+    description: "Oats with almond milk, fruits and nuts",
     deliveryTime: "from 10 - 20 min",
   },
 
@@ -72,7 +72,7 @@ export const DisplayEnglishCard = [
 
   {
     id: 9,
-    image: "https://i.postimg.cc/13FGgshV/omellete.jpg",
+    image: "https://i.postimg.cc/63sY51f5/Eng9.jpg",
     name: "Fluffy Pancakes",
     price: "₦ 12,000",
     description: "fluffy pancake with a drizzle of maple syrub.",
@@ -99,7 +99,7 @@ export const DisplayEnglishCard = [
 
   {
     id: 12,
-    image: "https://i.postimg.cc/DZYZ74Z3/English-combo2.jpg",
+    image: "https://i.postimg.cc/WbpS3Z0v/Eng12.jpg",
     name: "Coleslaw",
     price: "₦ 12,000",
     description: "Chicken coleslaw salad with ginger sesame dressing",
