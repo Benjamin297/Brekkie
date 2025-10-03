@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import {
   EnglishContainer,
   Image,
@@ -9,18 +9,9 @@ import English from "../../assets/English.jpg";
 import { BiCartAdd } from "react-icons/bi";
 import { GiScooter } from "react-icons/gi";
 import { DisplayEnglishCard } from "./EnglishCard";
+import { Link } from "react-router-dom";
 
 const EnglishBreakFast = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
-  const EnglishItems = [
-    "English Breakfast",
-    "Fruits & Veggies Breakfast",
-    "African Breakfast",
-    "Drink",
-    "Curated Combo",
-    "Pastries",
-  ];
-
   return (
     <EnglishContainer>
       <Image>
@@ -28,15 +19,47 @@ const EnglishBreakFast = () => {
       </Image>
       <Menu>
         <ul>
-          {EnglishItems.map((item, index) => (
-            <li
-              key={index}
-              className={activeIndex === index ? "active" : ""}
-              onClick={() => setActiveIndex(index)}
-            >
-              {item}
-            </li>
-          ))}
+          <Link
+            to="/homepage/english"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            <li>English Breakfast</li>
+          </Link>
+
+          <Link
+            to="/homepage/fruitsAndVeggies"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            <li>Fruits & Veggies Breakfast</li>
+          </Link>
+
+          <Link
+            to="/homepage/african"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            <li>African Breakfast</li>
+          </Link>
+
+          <Link
+            to="/homepage/drinks"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            <li>Drinks</li>
+          </Link>
+
+          <Link
+            to="/homepage/curated"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            <li>Curated Combo</li>
+          </Link>
+
+          <Link
+            to="/homepage/pastries"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            <li>Pastries</li>
+          </Link>
         </ul>
       </Menu>
 

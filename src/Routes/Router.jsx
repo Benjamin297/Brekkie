@@ -21,28 +21,28 @@ export const Element = createBrowserRouter([
         element: <Homepage />,
       },
       {
-        path: "english",
+        path: "/homepage/english",
         element: <EnglishBreakfast />,
       },
       {
-        path: "African",
+        path: "/homepage/african",
         element: <AfricanBeeakFast />,
       },
       {
-        path: "Curated",
+        path: "/homepage/curated",
         element: <CuratedCombo />,
       },
       {
-        path: "Drinks",
+        path: "/homepage/drinks",
         element: <Drinks />,
       },
       {
-        path: "FruitsAndVeggies",
+        path: "/homepage/fruitsAndVeggies",
         element: <FruitsAndVeggis />,
       },
 
       {
-        path: "Pastries",
+        path: "/homepage/pastries",
         element: <Pastries />,
       },
     ],

@@ -96,7 +96,7 @@ export const DisplayDrinks = [
 
   {
     id: 12,
-    image: "https://i.postimg.cc/Kv5vqT5c/ginger-tea.jpg",
+    image: "https://i.postimg.cc/nrmsV0Tn/Drinks-honey.jpg",
     name: "Latte Tea",
     price: "₦ 7,000",
     description: "Ice honey Latte",

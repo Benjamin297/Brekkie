@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import source from "../../assets/source.jpg";
+import Popup from "../../Auth/Popup";
 
 const Hero = () => {
+  // const [openId, setOpenId] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [authType, setAuthType] = useState(null);
+
+  // const handleOpen = (id) => {
+  //   setOpenId(openId === id ? null : id);
+  // };
+
+  const openModal = (type) => {
+    setAuthType(type);
+    setIsOpen(true);
+  };
+  const closeModal = () => {
+    setIsOpen(false);
+    setAuthType(null);
+  };
   return (
     <Container>
       <Wrapper>
@@ -10,14 +27,21 @@ const Hero = () => {
           <h2>Welcome To Brekkie </h2>
           <h1>Satisfy Your Cravings With Just A Few Taps....</h1>
           <ButContainer>
-            <button className="butt1">Sign Up</button>
-            <button className="butt2">Sign In</button>
+            <button onClick={() => openModal("signup")} className="butt1">
+              Sign Up
+            </button>
+            <button onClick={() => openModal("signin")} className="butt2">
+              Sign In
+            </button>
           </ButContainer>
         </TextHolder>
         <ImgHolder>
           {" "}
           <img src={source} alt="" />
         </ImgHolder>
+        {isOpen && (
+          <Popup type={authType} switchTo={setAuthType} onClose={closeModal} />
+        )}
       </Wrapper>
     </Container>
   );
@@ -57,6 +81,7 @@ const TextHolder = styled.div`
 const ButContainer = styled.div`
   display: flex;
   gap: 20px;
+  padding-top: 20px;
   .butt1 {
     width: 200px;
     height: 45px;
@@ -83,7 +108,7 @@ const ButContainer = styled.div`
 `;
 
 const ImgHolder = styled.div`
-  width: 641px;
+  width: 800px;
   height: 522px;
 
   img {

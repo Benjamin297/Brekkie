@@ -39,6 +39,7 @@ const Hero2 = () => {
 };
 
 export default Hero2;
+
 const Hero2Container = styled.div`
   width: 100%;
   height: 70vh;
@@ -51,7 +52,7 @@ const HeroWrapper = styled.div`
   height: 90%;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 `;
 const ImageHolder = styled.div`
   width: 490px;
@@ -65,11 +66,11 @@ const ImageHolder = styled.div`
   }
 `;
 const WriteUpHolder = styled.div`
-  width: 50%;
+  width: 40%;
   height: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 2rem;
 `;
 const About = styled.div`
   width: 100%;
@@ -90,7 +91,7 @@ const About = styled.div`
 `;
 const Vission = styled.div`
   width: 100%;
-  height: 40%;
+  height: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

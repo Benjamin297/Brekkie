@@ -4,29 +4,47 @@ import {
   LeftHolder,
   RighttHolder,
 } from "./HeaderStyle";
-// import { SlLocationPin } from "react-icons/sl";
+import { SlLocationPin } from "react-icons/sl";
 import { GoSearch } from "react-icons/go";
 import { BsCart3 } from "react-icons/bs";
 import { HiOutlineUser } from "react-icons/hi";
 import logo from "../../assets/LPLogo.svg";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import Logout from "./Logout";
+import Location from "./Location";
 
 const Header = () => {
+  const [location, setLocation] = useState(false);
+  const handlelocation = () => {
+    setLocation(!location);
+  };
+
+  const [dropDown, setDropDown] = useState(false);
+  const handleDropDown = () => {
+    setDropDown(!dropDown);
+  };
   return (
     <HeaderContainer>
       <HeaderWrapper>
         <LeftHolder>
-          <div className="Logo">
-            <img src={logo} alt="" />
-          </div>
-          {/* <div className="Left_input_holder">
+          <Link to="/Homepage">
+            <div className="Logo">
+              <img src={logo} alt="" />
+            </div>
+          </Link>
+          <div className="Left_input_holder">
             <SlLocationPin
-              style={{ marginLeft: "0.8rem", fontSize: "1.2rem" }}
+              onClick={handlelocation}
+              style={{
+                marginLeft: "0.8rem",
+                fontSize: "1.2rem",
+                color: "#6B8E23",
+              }}
             />
-            <input
-              type="text"
-              placeholder="Click to select location in Lagos Island"
-            />
-          </div> */}
+            <input type="text" placeholder="Available Address" />
+            {location && <Location />}
+          </div>
         </LeftHolder>
 
         <RighttHolder>
@@ -40,7 +58,10 @@ const Header = () => {
               <BsCart3 />
             </div>
             <div className="icon">
-              <HiOutlineUser />
+              <HiOutlineUser onClick={handleDropDown} />
+              {dropDown && (
+                <Logout dropDown={dropDown} setDropDown={setDropDown} />
+              )}
             </div>
           </div>
         </RighttHolder>
